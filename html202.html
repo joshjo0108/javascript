@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <!-- Favicon -->
+        <!-- PATHing -->
+        <link rel="shortcut icon" href="images/favicons/favicon-32x32.png" type="image/png">
+    </head>
+    <body>
+        <h1 href="top">Welcome to HTML202</h1>
+        <a href="#bottom"> Scroll to bottom of the page</a>
+
+        <!-- When you want to underline...using CSS -->
+        <p>
+            <span style="text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Porro ullam, accusamus id numquam ipsam excepturi aut voluptates iure nemo voluptatibus illo, cupiditate hic repellendus. Repudiandae quo obcaecati inventore voluptatibus blanditiis?
+        </p>
+        <p>
+            <span style="text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Porro ullam, accusamus id numquam ipsam excepturi aut voluptates iure nemo voluptatibus illo, cupiditate hic repellendus. Repudiandae quo obcaecati inventore voluptatibus blanditiis?
+        </p>
+        <p>
+            <span style="text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Porro ullam, accusamus id numquam ipsam excepturi aut voluptates iure nemo voluptatibus illo, cupiditate hic repellendus. Repudiandae quo obcaecati inventore voluptatibus blanditiis?
+        </p>
+        <p>
+            <span style="text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Porro ullam, accusamus id numquam ipsam excepturi aut voluptates iure nemo voluptatibus illo, cupiditate hic repellendus. Repudiandae quo obcaecati inventore voluptatibus blanditiis?
+        </p>
+        <p>
+            <span style="text-decoration: underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Porro ullam, accusamus id numquam ipsam excepturi aut voluptates iure nemo voluptatibus illo, cupiditate hic repellendus. Repudiandae quo obcaecati inventore voluptatibus blanditiis?
+        </p>
+
+        <!-- This is when you want to add an image from another file -->
+        <img src="images/computer.jpg" alt="Computers" width="400">
+
+        <!-- This is when you want to go to another .html file -->
+        <div>
+            <a href="images/images.html">Go to images.html</a>
+        </div>
+
+       <!-- Making a table -->
+        <table border="1" width="100%">
+            <tbody>
+                <!-- Table Row -->
+                <tr>
+                    <!-- Take up 3 column width -->
+                    <td colspan="3"> First Cell</td>
+                    <!-- <td> Second Cell</td> -->
+                    <!-- <td> Third Cell</td> -->
+                </tr>
+                <tr>
+                    <td rowspan="2"> First Cell</td>
+                    <!-- <td> Second Cell</td> -->
+                    <td colspan="2"> Second Cell</td>
+                </tr>
+                <tr>
+                    <td> Second Cell</td>
+                    <td> Third Cell</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table  border="1" width="100%">
+            <tr>
+                <!-- Make it centered!! -->
+                <th colspan="2">Welcome to my website</td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <h3>Navigation</h3>
+                </td>
+                <td>
+                    <h3>Content</h3>
+                </td>
+            </tr>
+        </table>
+
+        <!-- This is a class for CSS -->
+        <!-- Reusable piece of code -->
+        <style>
+            .classNameHere {
+                padding: 40px; 
+                color: white;
+                background-color: black;
+            }
+            .upperCase {
+                text-transform: uppercase;
+            } 
+        </style>
+
+        <!-- CSS part -->
+        <div class="classNameHere">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
+        </div>
+        <div class="classNameHere upperCase">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
+        </div>
+        <div class="classNameHere">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
+        </div>
+
+        <!-- Make it more invisible for the bottom (Not using <h3>)-->
+        <div id="bottom">
+            <a href="#top">Go back to the top</a>
+        </div>
+        <!-- <h3 id="bottom"> This is the bottom of the page</h3> -->
+    </body>
+</html>
