@@ -83,23 +83,83 @@
             .upperCase {
                 text-transform: uppercase;
             } 
+            #testingId {
+                border: 15px solid red;
+            }
         </style>
 
         <!-- CSS part -->
         <div class="classNameHere">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
         </div>
-        <div class="classNameHere upperCase">
+        <div id="testingId" class="classNameHere upperCase">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
         </div>
         <div class="classNameHere">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere at ab aliquam reprehenderit magnam vel quam iste alias distinctio animi tenetur repellat perferendis eius, culpa et aut fugit dolorum.
         </div>
 
+        <h3>Format code</h3>
+        <!-- as a block element -->
+        <pre>
+            <!-- &lt;b&gt This is bold &lt;/b&gt : This can be used to show <b>This is bold</b> -->
+            Some      stuff     here &lt;b&gt This is bold &lt;/b&gt
+            Second     line     here
+        </pre>
+        <p>
+            <code>Lorem    ipsum dolor    sit &lt;b&gt This is bold &lt;/b&gt amet consectetur adipisicing elit.</code> Non repudiandae consequatur libero enim placeat voluptate officia, totam laudantium vel officiis magnam laboriosam fugit cum nihil dicta! Ipsam sapiente fuga temporibus. &lt;b&gt This is bold &lt;/b&gt
+        </p>
+
+        <!-- Server runs Java, C, python -->
+        
+        <h3>Forms</h3>
+        <form method="GET" action="somepage.html">
+            <!-- Small box -->
+            <div>
+                <!-- requires @ -->
+                <input required name="email"type="email" value="Hello World@gmail.com" placeholder="Enter your name">
+                <input required name="email"type="button" value="Hello World" placeholder="Enter your name">
+                <input required name="password"type="password" value="Hello World" placeholder="Enter your password">
+            </div>
+
+            <!-- Big box -->
+            <div>
+                <textarea required name="address"cols="50" rows="5" placeholder="Enter your address here">Enter your address here
+                    Whitespace does matter in here
+                                    White space matters
+                </textarea>
+            </div>
+            
+            <!-- Mostly used is submit -->
+            <div>
+                <button type="submit">Submit this form</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <div>
+                <select name="selected_option">
+                    <option value="" disabled="disabled">
+                        - Disabled - 
+                    </option>
+                    <option value="value1">This is Value 1</option>
+                    <option value="default-is-selected" selected="selected">
+                        Selected by Default
+                    </option>
+                </select>    
+            </div>
+        </form>
+
+        <h3>Embeds</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o9lzrqkvCwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         <!-- Make it more invisible for the bottom (Not using <h3>)-->
         <div id="bottom">
             <a href="#top">Go back to the top</a>
+            <!-- subscript superscript -->
+            <sup>&copy;</sup> <sub>2022</sub>
         </div>
         <!-- <h3 id="bottom"> This is the bottom of the page</h3> -->
+
+        
     </body>
 </html>
